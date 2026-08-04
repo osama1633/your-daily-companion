@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import videoAsset from "@/../public/clinic-hero.mp4.asset.json";
+import videoAsset from "@/assets/clinic-hero.mp4.asset.json";
 
 /**
  * Full-page fixed background video whose playback position is driven by
