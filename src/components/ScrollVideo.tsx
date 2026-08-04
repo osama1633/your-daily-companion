@@ -60,7 +60,7 @@ export function ScrollVideo() {
     <div className="fixed inset-0 -z-10 overflow-hidden bg-background">
       <video
         ref={videoRef}
-        className="h-full w-full object-cover opacity-70"
+        className="h-full w-full object-cover"
         src={videoAsset.url}
         muted
         playsInline
@@ -68,14 +68,15 @@ export function ScrollVideo() {
         autoPlay
         loop
       />
-      <div className="absolute inset-0 bg-background/70" />
+      <div className="absolute inset-0 bg-background/55" />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at 50% 40%, transparent 0%, var(--color-background) 85%)",
+            "radial-gradient(circle at 50% 45%, transparent 0%, color-mix(in oklab, var(--color-background) 92%, transparent) 95%)",
         }}
       />
+
     </div>
   );
 }
