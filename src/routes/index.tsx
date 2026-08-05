@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-import { HeroVideo } from "@/components/HeroVideo";
+import { BackgroundVideo } from "@/components/BackgroundVideo";
 import { BookingForm } from "@/components/BookingForm";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 import smile1 from "@/assets/smile-1.jpg";
