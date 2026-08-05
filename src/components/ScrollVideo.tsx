@@ -61,7 +61,7 @@ export function ScrollVideo() {
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
-        src={videoAsset.url}
+        src={`${videoAsset.url}?v=1`}
         muted
         playsInline
         preload="auto"
