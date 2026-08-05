@@ -119,7 +119,6 @@ const transformations = [
 function Index() {
   return (
     <div className="relative min-h-screen text-foreground">
-      <ScrollVideo />
 
       {/* Nav */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
