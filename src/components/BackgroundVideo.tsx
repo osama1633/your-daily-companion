@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import bgVideo from "@/assets/clinic-bg.mp4.asset.json";
+import bgVideo from "@/assets/clinic-bg-v2.mp4.asset.json";
 
 /**
  * Fixed, full-page looping background video shown behind every section.
