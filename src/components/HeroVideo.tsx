@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroVideo from "@/assets/hero-dentist.mp4.asset.json";
+import heroVideo from "@/assets/hero-clinic.mp4.asset.json";
 
 /**
  * Real HTML5 <video> background for the hero section.
