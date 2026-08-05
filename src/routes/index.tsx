@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-import { HeroVideo } from "@/components/HeroVideo";
+import { BackgroundVideo } from "@/components/BackgroundVideo";
 import { BookingForm } from "@/components/BookingForm";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 import smile1 from "@/assets/smile-1.jpg";
@@ -119,6 +118,8 @@ const transformations = [
 function Index() {
   return (
     <div className="relative min-h-screen text-foreground">
+      <BackgroundVideo />
+
 
       {/* Nav */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
@@ -149,9 +150,9 @@ function Index() {
       {/* Hero */}
       <section
         id="home"
-        className="relative isolate flex min-h-screen items-center justify-center overflow-hidden px-5 pt-24 text-center"
+        className="relative flex min-h-screen items-center justify-center px-5 pt-24 text-center"
       >
-        <HeroVideo />
+
 
         <div className="mx-auto max-w-3xl">
           <p className="text-xs uppercase tracking-[0.35em] text-primary">

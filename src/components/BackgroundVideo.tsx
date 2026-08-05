@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
-import heroVideo from "@/assets/hero-clinic.mp4.asset.json";
+import bgVideo from "@/assets/clinic-bg.mp4.asset.json";
 
 /**
- * Real HTML5 <video> background for the hero section.
+ * Fixed, full-page looping background video shown behind every section.
  * Autoplays, muted, looping, inline — keeps playing while scrolling.
  */
-export function HeroVideo() {
+export function BackgroundVideo() {
   const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -26,16 +26,17 @@ export function HeroVideo() {
   }, []);
 
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-background">
       <video
         ref={ref}
         className="h-full w-full object-cover"
-        src={heroVideo.url}
+        src={bgVideo.url}
         autoPlay
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
+        disablePictureInPicture
       />
       <div className="absolute inset-0 bg-background/45" />
     </div>
