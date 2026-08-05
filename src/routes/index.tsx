@@ -150,9 +150,9 @@ function Index() {
       {/* Hero */}
       <section
         id="home"
-        className="relative isolate flex min-h-screen items-center justify-center overflow-hidden px-5 pt-24 text-center"
+        className="relative flex min-h-screen items-center justify-center px-5 pt-24 text-center"
       >
-        <HeroVideo />
+
 
         <div className="mx-auto max-w-3xl">
           <p className="text-xs uppercase tracking-[0.35em] text-primary">
